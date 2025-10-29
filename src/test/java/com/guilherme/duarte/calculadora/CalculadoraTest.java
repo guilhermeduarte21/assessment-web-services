@@ -23,4 +23,15 @@ public class CalculadoraTest {
 
         assertEquals(resultadoEsperado, resultado);
     }
+
+    @Test
+    public void testSubtrair() {
+        int a = 10;
+        int b = 4;
+        int resultadoEsperado = 6;
+
+        int resultado = calculadora.subtrair(a, b);
+
+        assertEquals("10 - 4 deveria resultar em 6", resultadoEsperado, resultado);
+    }
 }
