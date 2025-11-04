@@ -34,4 +34,15 @@ public class CalculadoraTest {
 
         assertEquals("10 - 4 deveria resultar em 6", resultadoEsperado, resultado);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDividirPorZero() {
+        calculadora.dividir(10, 0);
+    }
+
+    @Test
+    public void testDividirNormal() {
+        double resultado = calculadora.dividir(10, 2);
+        assertEquals(5.0, resultado, 0.001);
+    }
 }
