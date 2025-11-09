@@ -23,7 +23,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Javalin -->
+        <!-- Javalin 6 -->
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin</artifactId>
